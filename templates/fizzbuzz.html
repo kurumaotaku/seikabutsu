@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- titleにhiddenをつけて非表示に-->
+<title hidden>デモページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- グーグルからフォント読み込み-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@600;900&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@600&family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+<div id="wrapper2">
+        <div id="header2">
+                <p id="midasi3">Fizzbuzzチェッカー</p>
+        </div>
+        <div id="main">
+                <p id="midasi2">#ルール</p>
+                整数のみ入力してください。<br>
+                入力された数字が3,5,15の倍数であるかどうかを判定し、適切な文言を返答します。<br>
+                3の倍数であればfizz,5の倍数であればbuzz,15の倍数であればfizzbuzzをレスポンスします。<br>
+                いずれにも当てはまらない場合は入力値がそのまま返答されます。<br>
+                なお、入力文字数制限は5桁以内です。
+                <p id="yattemiyou">#フィズバズくんに聞いてみよう！</p>
+                <div id="formmid">
+                        <form action="/fizzbuzz_post" method="POST">
+                        <input name="fizzbuzz_input" id="input"></input>
+                        <button type="submit" id="submit">ってフィズバズ！？</button>
+                        </form>
+                </div>
+
+
+                <div id="boku">{{ nyuryokuti }}</div>
+                <p id="midasi">●Fizzbuzzとは</p>
+                        <p id="midasi2">#3,5,15の倍数</p>
+                                ご存じかとは思いますが、改めて簡単にfizzbuzzの説明をします。<br>
+                                Fizzbuzzとは言葉遊びゲームの一種で、カウントアップをしていくゲームです。<br>
+                                その過程で、３で割り切れるときは「Fizz」、5で割り切れるときは「Buzz」。<br>
+                                両方で割り切れるときは「FizzBuzz」と唱えます。<br>
+                                今回は入力フォームで５ケタ以内の整数値が、いずれに該当するかというプログラムを作ってみました。
+                        
+                        <div id="demopage">
+                        <a href="main"><img src="{{ url_for('static', filename='/images/ichiran.png' )}}"></a>
+                        </div>
+
+        </div>
+
+        </div>
+        </div>
+        <div id="footer">
+        </div>
+</div>
+        <script>
+        <!--
+
+        -->
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* wrapperはサイト全体を囲うidです*/
+/* # は　idを指定します　html側では <p id="title">みたいな感じで指定できます */
+
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-image: url("images/header.png");
+    background-size: 30%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    filter: saturate(200%);
+}
+
+#wrapper2{
+  width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Meiryo",
+    sans-serif;
+}
+
+#title{
+  color: #252525;
+  font-weight:bold;
+  font-size: 80px;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height:0%;
+}
+
+#title2{
+  color: #252525;
+  font-weight:bold;
+  font-size: 100px;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height:0%;
+}
+
+#header{
+  height: 160px;
+}
+
+#header2{
+  height: 80px;
+}
+
+#midasi{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:bold;
+  font-size: 55px;
+  line-height:10%;
+  color: #161616;
+}
+
+#midasi2{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:lighter;
+  font-size: 40px;
+  line-height:30%;
+  color: #2e2e2e;
+}
+
+#midasi3{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:bold;
+  font-size: 100px;
+  line-height:10%;
+  color: #1e1f1e;
+}
+
+#yattemiyou{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: lighter;
+  line-height:10%;
+  font-size: 40px;
+  margin-top: 70px;
+  color: #292929;
+  text-align:center;
+}
+
+#formmid{
+  text-align:center;
+  margin-bottom: 100px;
+}
+
+#input{
+  font-size:25px;
+  text-align: center;
+  height:45px;
+  width:400px;
+  filter: drop-shadow(9px 9px 9px rgba(97, 97, 97, 0.5));
+}
+
+#submit{
+  text-align: center;
+  height:50px;
+  background-color: #1e1f1e;
+  color: #FFFFFF;
+  filter: drop-shadow(9px 9px 9px rgba(97, 97, 97, 0.5));
+}
+
+
+#right{
+  text-align:right;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#demopage{
+  text-align:center;
+  margin-top: 20%;
+  filter: drop-shadow(0px 0px 0px rgba(97, 97, 97, 0));
+}
+
+#hiraku{
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+#boku{
+  width: 960px;
+  height: 250px;
+  background-image: url("images/boku.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 250px;
+  font-size: 30px;
+  font-family: 'DotGothic16', sans-serif;
+  margin-bottom: 170px;
+  overflow-wrap: break-word;
+}
+
+#footer{
+  margin-top: 10%;
+  height: 50px;
+  color:#FFFFFF;
+  background-color: #161616;
+  text-align:center;
+}

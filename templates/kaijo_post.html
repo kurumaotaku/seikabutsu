@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- titleにhiddenをつけて非表示に-->
+<title hidden>デモページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- グーグルからフォント読み込み-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@600;900&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@600&family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+<div id="wrapper2">
+        <div id="header2">
+                <p id="midasi3">階乗くん</p>
+        </div>
+        <div id="main">
+                <p id="midasi2">#ルール</p>
+                正の整数のみ入力してください。<br>
+                階乗くんが入力された数字の階乗を返答してくれます。<br>
+                なお、階乗くんは計算が苦手で、30以上の数値の階乗はできないらしいです。
+                <p id="yattemiyou">#階乗くんに聞いてみよう！</p>
+                <div id="formmid">
+                        <form action="/kaijo_post" method="POST">
+                                <input name="kaijo_input" id="input">
+                                <button type="submit" id="submit">の階乗は？</button>
+                        </form>
+                </div>
+
+
+                <div id="boku">{{ nyuryokuti }}</div>
+                <p id="midasi">●階乗くんに関して</p>
+                        <p id="midasi2">#入力制限とアルゴリズム</p>
+                                一覧に書いた通り、階乗君は階乗を計算するプログラムです。<br>
+                                たとえばテスト観点においてどのような入力制限が設けられているべきかは大事ですが、開発者目線でその大切さを実感するために作りました。<br>
+                                計算ロジックについてもアルゴリズムを勉強したく、あえてmathモジュールを使わず実装してみました。<br>
+                                どんなに複雑なアルゴリズムでもロジックの組み合わせであることは変わらず、それに少しでも習熟したいと考えたからです。<br>
+                        
+                        <div id="demopage">
+                        <a href="main"><img src="{{ url_for('static', filename='/images/ichiran.png' )}}"></a>
+                        </div>
+
+        </div>
+
+        </div>
+        </div>
+        <div id="footer">
+        </div>
+</div>
+        <script>
+        <!--
+
+        -->
+</script>
+</body>
+</html>

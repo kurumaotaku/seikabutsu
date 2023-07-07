@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- titleにhiddenをつけて非表示に-->
+<title hidden>デモページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- グーグルからフォント読み込み-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@600;900&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+<div id="wrapper2">
+        <div id="header2">
+                <p id="midasi3">Demo</p>
+        </div>
+        <div id="main">
+                ここでは成果物として、自作したWebサイト上で動作するアプリケーションを紹介します。
+                <p id="midasi">●成果物一覧</p>
+                        <p id="midasi2">#FizzBuzzチェッカー</p>
+                                IT業界に携わるものとして、教養としてのプログラミングスキルは保有していることが望ましいと考えます。<br>
+                                そうした題材としてもっとも適切なのはFizzbuzzと考えたためまずこちらを最初にデプロイしようと考えました。<br>
+                                <div id="hiraku"><a href="fizzbuzz"><img src="{{ url_for('static', filename='images/hiraku.png') }}"></a></div>
+
+                        <p id="midasi2">#階乗くん</p>
+                                階乗を計算するプログラムです。<br>
+                                入力値のバリデーションを勉強するために作りました。<br>
+                                計算ロジックについては本来pythonであればmathモジュールを使えば一瞬で実装できる機能ではあるのですが、<br>
+                                勉強のためにforとifを組み合わせて作ってみました。<br>
+                                <div id="hiraku"><a href="kaijo"><img src="{{ url_for('static', filename='images/hiraku.png') }}"></a></div>
+                        
+                        <p id="midasi2">#***</p>
+                                FizzBuzz程度のアルゴリズムであれば、実装にあたり時間を要しません。<br>
+                                エンジニア向け転職サイト"paiza"における、プログラミングスコアランクは**評定です。<br>
+                                これは多くの企業におけるエンジニア採用面談に書類審査なしで応募できるスコアランクであり、<br>
+                                quoraなどのコミュニティにおいてもそれなりに評価されています。<br>
+                                また、paiza上の想定年収は**万円です。<br>
+                                それが必ずしも実態としての市場価値と一致しないことは理解していますが、御一考の価値はあるかと思います。<br>
+                                (競技プログラミングに興味があり、atCorder**コーダーを目指しています）
+                                <div id="hiraku"><a href="fizzbuzz"><img src="{{ url_for('static', filename='images/hiraku.png') }}"></a></div>
+        </div>
+
+        </div>
+        </div>
+        <div id="footer">
+        フッター部分
+        </div>
+</div>
+        <script>
+        <!--
+
+        -->
+</script>
+</body>
+</html>

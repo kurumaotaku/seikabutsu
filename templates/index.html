@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- titleにhiddenをつけて非表示に-->
+<title hidden>Demo 21044</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- グーグルからフォント読み込み-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@600;900&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+<div id="wrapper">
+        <div id="header">
+                <p id="title">MyPortfolio</p>
+                <p id="title2">S.T. 03/23</p>
+        </div>
+
+        <div id="main">
+                現在の私にできることを、ポートフォリオとして動的Webサイトにしてみました。<br>
+                このwebサイトは、pythonをベースとしたフレームワーク"Flask"によって構築されています。
+                <p id="midasi">●できること</p>
+                        <p id="midasi2">#htmlとcss</p>
+                                少なくとも、この程度の静的ページをデザイン・作成する程度の能力はあります。<br>
+                                当然ですが、このページを作成するにあたり生成系AIなどは一切使っておらず、<br>
+                                デザインや構想も、すべてオリジナルです。<br>
+                                技術的にはGoogle fontsというオープンソースのWebフォントを使っているぐらいで、<br>
+                                特に特筆すべき項目はないかもしれませんが、<br>
+                                少なくともこの程度のものなら作成できるというデモとしては成立するものと思います。
+        <div id="right">
+                        <p id="midasi2">#フレームワークを用いた動的Webの構築</p>
+                                冒頭でも記入させていただいた通り、<br>このWebページはFlaskというフレームワークを利用して作られています。<br>
+                                Flaskはpythonベースの軽量なフレームワークで、<br>アプリケーションとして動作する、動的なWebシステムを構築することができます。<br>
+                                たとえばGET/POSTといったフロント/バックエンド間での結合処理を学ぶにあたって、<br>こうした動的Webを実装することは大変実践的な学びがあるものでした。<br>
+
+        </div>
+                        <p id="midasi2">#Python</p>
+                                FizzBuzz程度のアルゴリズムであれば、実装にあたり時間を要しません。<br>
+                                エンジニア向け転職サイト"paiza"における、プログラミングスコアランクは**評定です。<br>
+                                これは多くの企業におけるエンジニア採用面談に書類審査なしで応募できるスコアランクであり、<br>
+                                quoraなどのコミュニティにおいてもそれなりに評価されています。<br>
+                                また、paiza上の想定年収は**万円です。<br>
+                                それが必ずしも実態としての市場価値と一致しないことは理解していますが、御一考の価値はあるかと思います。<br>
+                                (競技プログラミングに興味があり、atCorder**コーダーを目指しています）
+                        
+        <div id="right">
+                        <p id="midasi2">#データベースの基礎理解</p>
+                                RDBMSの基礎的な理解はできており、基本的なSQL構文を作成することができます。<br>
+                                また、SQLインジェクションなどの攻撃手法についても、初歩的なレベルでは理解できております。
+
+        </div>
+        
+        <div id="demopage">
+        <a href="main"><img src="{{url_for("static", filename="images/demopage.png")}}"></a>
+        </div>
+
+        </div>
+        </div>
+        <div id="footer">
+        フッター部分
+        </div>
+</div>
+        <script>
+        <!--
+
+        -->
+</script>
+</body>
+</html>
