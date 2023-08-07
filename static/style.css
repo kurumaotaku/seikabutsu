@@ -135,6 +135,38 @@ body {
   overflow-wrap: break-word;
 }
 
+#input{
+  font-size:25px;
+  text-align: center;
+  height:45px;
+  width:400px;
+  filter: drop-shadow(9px 9px 9px rgba(97, 97, 97, 0.5));
+}
+
+#sukusyo{
+  text-align:center;  
+  width: 70%;
+  height: 70%;
+  filter: drop-shadow(9px 9px 9px rgba(97, 97, 97, 0.5));  
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#sukusyo2{
+  text-align:right;  
+  width: 40%;
+  height: 40%;
+  filter: drop-shadow(9px 9px 9px rgba(97, 97, 97, 0.5));  
+  margin-right: 0px;
+}
+
+#sukusyo3{
+  text-align:right;  
+  width: 70%;
+  height: 70%;
+  filter: drop-shadow(9px 9px 9px rgba(97, 97, 97, 0.5));  
+}
+
 #footer{
   margin-top: 10%;
   height: 50px;
